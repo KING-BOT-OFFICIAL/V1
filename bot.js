@@ -97,7 +97,7 @@ async function Trex () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('[🇱🇰𝙺𝙸𝙽𝙶')}${chalk.blue.bold('[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]')}
+        console.log(`${chalk.green.bold('[🇱🇰𝙺𝙸𝙽𝙶')}${chalk.blue.bold(' 𝙱𝙾𝚃🤘]')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 ${chalk.blue.italic('📶 🇱🇰 Connecting to WhatsApp...▶')}`);
     });
@@ -143,13 +143,13 @@ ${chalk.blue.italic('📶 🇱🇰 Connecting to WhatsApp...▶')}`);
         );
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 Hellow !! ${conn.user.name}! 🙋‍\n\n*🤗 Welcome To ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  :│⚜️ *\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚜️ .\n\n*⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] WORKING Your Account*\n\n*⚜️ ▷ Use the 📛.menu📛 command to get bot menu...*\n\n\n*⚜️  [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] is a powerfull WhatsApp bot developed by White Hackers.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n📛 .update Command use for new items* 🤘\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 Hellow !! ${conn.user.name}! 🙋‍\n\n*🤗 Welcome To ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  :│⚜️*\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚜️ .\n\n*⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] WORKING Your Account*\n\n*⚜️ ▷ Use the 📛.menu📛 command to get bot menu...*\n\n\n*⚜️  [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] is a powerfull WhatsApp bot developed by White Hackers.*\n\n*🚀 This is your LOG number. Avoid using the command here.*\n\n*📛 .update Command use for new items 🤘*\n\n`});
              
          } else if (config.LANG == 'SI') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 අයුබොවන් !! ${conn.user.name}! 🙋\n\n*🤗  සාදරයෙන් ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  වෙත පිලිගන්නවා :│⚜️ *\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n* ⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] සම්පූර්න මෙනුව ලබා ගැනීමට 📛 .menu 📛 විධානය භාවිතා කරන්න...*\n\n\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..\n[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට  .update විධානය භාවිතා කරන්න..*\n\n*⚜️ මෙය ඔබගේ LOG අංකයයි.  මෙහි විධාන භාවිතයෙන් වළකින්න.* 🤘\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 අයුබොවන් !! ${conn.user.name}! 🙋\n\n*🤗  සාදරයෙන් ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  වෙත පිලිගන්නවා :│⚜️*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] සම්පූර්න මෙනුව ලබා ගැනීමට 📛 .menu 📛 විධානය භාවිතා කරන්න...*\n\n\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..*\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට  .update විධානය භාවිතා කරන්න..*\n\n*⚜️ මෙය ඔබගේ LOG අංකයයි.  මෙහි විධාන භාවිතයෙන් වළකින්න. 🤘*\n\n`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 Hellow !! ${conn.user.name}! 🙋‍\n\n*🤗 Welcome To ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  :│⚜️ *\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚜️ .\n\n*⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] WORKING Your Account*\n\n*⚜️ ▷ Use the 📛.menu📛 command to get bot menu...*\n\n\n*⚜️  [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] is a powerfull WhatsApp bot developed by White Hackers.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n📛 .update Command use for new items* 🤘\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🙋 Hellow !! ${conn.user.name}! 🙋‍\n\n*🤗 Welcome To ⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  :│⚜️*\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚜️ .\n\n*⚜️ │[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] WORKING Your Account*\n\n*⚜️ ▷ Use the 📛.menu📛 command to get bot menu...*\n\n\n*⚜️  [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘] is a powerfull WhatsApp bot developed by White Hackers.*\n\n*🚀 This is your LOG number. Avoid using the command here.*\n\n*📛 .update Command use for new items 🤘*\n\n`});
         }
      });
     
@@ -296,7 +296,7 @@ ${chalk.blue.italic('📶 🇱🇰 Connecting to WhatsApp...▶')}`);
             if (config.LANG == 'ID') announce = '📢◉◉ \n👾Announcement System 🔘'
             
             let video = 'https://youtu.be/oWDW6_Ewi1U'
-            let image = 'https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg'
+            let image = 'https://telegra.ph/file/24b9b8507613125d34bd1.jpg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
@@ -438,13 +438,13 @@ ${chalk.blue.italic('📶 🇱🇰 Connecting to WhatsApp...▶')}`);
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'EN') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ This is your LOG number Dont Try Command here....\n▷Also You Can join Our Checkpoint group More Help.\n⚜️ Checkpoint 01▷ https://chat.whatsapp.com/KNXP4fcK8ehJsdPlsM97wr\n\n*Error:* ```' + error + '```\n\n' });
                                 
                             } else if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\nf_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න...\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\n⚜️ Checkpoint 01▷ hhttps://chat.whatsapp.com/KNXP4fcK8ehJsdPlsM97wr\n\n*දෝෂය:* ```' + error + '```\n\n' });
                                 
                             } else {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '⎝🌲Ҝ丨几Ꮆ🌲⎠ WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ This is your LOG number Dont Try Command here....\n▷Also You Can join Our Checkpoint group More Help.\n⚜️ Checkpoint 01▷ https://chat.whatsapp.com/KNXP4fcK8ehJsdPlsM97wr\n\n*Error:* ```' + error + '```\n\n' });
                             }
                         }
                     }
