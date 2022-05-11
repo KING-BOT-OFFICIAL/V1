@@ -15,11 +15,11 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'V 1.0.0 PUBLIC',
+    VERSION: 'V 5.0.0 PUBLIC',
     ZRUN: "zenzapi",
     CHANNEL: 'https://chat.whatsapp.com/GT5V8RakkftB7DAKWMeQML',
-    MEN: process.env.MENU_CMD === undefined ? 'alpha' : process.env.MENU_CMD,
-    SESSION: process.env.ALPHA_SESSION === undefined ? '' : process.env.ALPHA_SESSION,
+    MEN: process.env.MENU_CMD === undefined ? 'menu' : process.env.MENU_CMD,
+    SESSION: process.env.KINGBOT_SESSION === undefined ? '' : process.env.KINGBOT_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     TIME: process.env.TIME_ZONE === undefined ? 'Asia/Colombo' : process.env.TIME_ZONE,
     AL: process.env.ALIVE_LOGO === undefined ? '' : process.env.ALIVE_LOGO,
@@ -57,7 +57,7 @@ module.exports = {
     GROUPL3: process.env.GROUP_LINK_3 === undefined ? '': process.env.GROUP_LINK_3,
     GROUPN4: process.env.GROUP_NAME_4 === undefined ? '': process.env.GROUP_NAME_4,
     GROUPL4: process.env.GROUP_LINK_4 === undefined ? '': process.env.GROUP_LINK_4,
-    CAPTION: process.env.CAPTION === undefined ? ' ⎝🛡️ ALPHA 🛡️⎠ ' : process.env.CAPTION,
+    CAPTION: process.env.CAPTION === undefined ? '[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]' : process.env.CAPTION,
     CHAT_BOT: process.env.CHAT_BOT === undefined ? 'false' : process.env.CHAT_BOT,
     AUTOVOICE: process.env.VOICE_CHAT === undefined ? 'false' : process.env.VOICE_CHAT,
     TAGREPLY: process.env.TAG_REPLY === undefined ? '919072790587@s.whatsapp.net' : process.env.TAG_REPLY,
@@ -118,8 +118,8 @@ module.exports = {
     WHATS_LINK_BLOCK: process.env.WHATS_LINK_BLOCK === undefined ?'false' : process.env.WHATS_LINK_BLOCK,
     SITE: process.env.SITE === undefined ?'netfiletolink.herokuapp.com/' : process.env.SITE,
     MENU_LOGO: process.env.MENU_LOGO === undefined ?'https://telegra.ph/file/.jpg' : process.env.MENU_LOGO,
-    DEVELOPER: 'Achiya',
-    AUTHOR: '⎝🛡️ ALPHA 🛡️⎠',
+    DEVELOPER: 'white hackers',
+    AUTHOR: '[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]',
     PKGPS: process.env.PKGPS === undefined ?'=xnxcom' : process.env.PKGPS,
     GIT: 'https://githu',
     HEROKU: {
