@@ -119,15 +119,15 @@ else if (Config.WORKTYPE == 'public') {
 
             
             const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '😈 HACKER ⚜️'+hacker}, type: 1},//jakakkak
-  {buttonId: 'MNU', buttonText: {displayText: '⚕️ PROGRAMMER 😎'+programmer}, type: 1},
-  {buttonId: 'MEHN', buttonText: {displayText: '⚕️ OTHER 😌'+other}, type: 1},
- ]
+  {buttonId: 'MENU', buttonText: {displayText: '⚜️ BOT LINKS ⚜️'+all}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '📛 BOT ABOUT 📛'+about}, type: 1},
+  {buttonId: 'MEHN', buttonText: {displayText: '😈 CONTACT OWNER 🤘'+owner}, type: 1},
+  ]
 
 const btn = {
    // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
-    contentText: "```Hey There! I'm Online now. ⚜️```\n\n⚕️ My name : ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️\n\n ⚜️ Developer: HIRUWA\n\n⚜️ Thank You For Using ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️\n\n  WHAT IS YOUR AMBITION 😎⚜️",
-    footerText: 'BY ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️ ▷',
+    contentText: "```🙋Hey There! I'm Online now📶️️```\n\n⚜️ My name : [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️\n\n ⚜️ Developer: White hackers\n\n⚜️ Thank You For Using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]",
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
@@ -142,7 +142,7 @@ const btn = {
         await new Promise(r => setTimeout(r, 1000));
 
  
-      //  await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```Hey There! I'm Online now. ⚜️```\n\n⚕️ My name : ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️\n\n ⚜️ Developer: HIRUWA\n\n⚜️ Thank You For Using ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️"})
+      //  await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "  ```🙋Hey There! I'm Online now📶️️```\n\n⚜️ My name : [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️\n\n ⚜️ Developer: White hackers\n\n⚜️ Thank You For Using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️"})
             
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
@@ -157,14 +157,14 @@ const btn = {
 
 
         const buttons = [
-  {buttonId: 'MENU', buttonText: {displayText: '😈 HACKER ⚜️'+hacker}, type: 1},//jakakkak
-  {buttonId: 'MEN', buttonText: {displayText: '⚕️ PROGRAMMER 😎'+programmer}, type: 1},
-  {buttonId: 'MEHN', buttonText: {displayText: '⚕️ OTHER 😌'+other}, type: 1},
+  {buttonId: 'MENU', buttonText: {displayText: '⚜️ BOT LINKS ⚜️'+all}, type: 1},//jakakkak
+  {buttonId: 'MNU', buttonText: {displayText: '📛 BOT ABOUT 📛'+about}, type: 1},
+  {buttonId: 'MEHN', buttonText: {displayText: '😈 CONTACT OWNER 🤘'+owner}, type: 1},
   ]
 const btn = {
    // imageMessage: 'https://telegra.ph/file/cd6032c65c27e0510ddad.jpg',
-    contentText:  Config.ALIVEMSG + "\n\n\nWHAT IS YOUR AMBITION 😎⚜️",
-    footerText: 'BY ⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️▷',
+    contentText:  Config.ALIVEMSG + "\n\n\nThonk you for using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘].️",
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
@@ -181,7 +181,7 @@ const btn = {
         await new Promise(r => setTimeout(r, 1000));
 
  
-        //await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️*' })
+        //await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]*' })
         await message.client.sendMessage (message.jid, btn, MessageType.buttonsMessage)
 
      }
@@ -203,7 +203,7 @@ const btn = {
     Trex.addrex({pattern: 'version', fromMe: false, desc: Lang.BOT_V}, (async (message, match) => {    
     
         await message.client.sendMessage(message.jid, 
-                `*⚕️🎭⚜️ Anonymous Bot ⚜️🎭⚕️*\n\n` + 
+                `*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 1.0.0 - Public'+
                 `\n\n🍁 Check github for bot:  `
