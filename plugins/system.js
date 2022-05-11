@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
 
 const btn = {
     contentText: "  ```🙋Hey There! I'm Online now📶️️```\n\n⚜️ My name : [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️\n\n ⚜️ Developer: White hackers\n\n⚜️ Thank You For Using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]",
-    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
@@ -62,9 +62,9 @@ const btn = {
   {buttonId: 'MEHN', buttonText: {displayText: '😈 CONTACT OWNER 🤘'+owner}, type: 1},
   ]
 const btn = {
-   // imageMessage: 'https://telegra.ph/file/cd6032c65c27e0510ddad.jpg',
+   // imageMessage: 'https://telegra.ph/file/24b9b8507613125d34bd1.jpg',
     contentText: Config.ALIVEMSG + "\n\n Thank you for using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️",
-    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
@@ -100,7 +100,7 @@ const btn = {
                 `*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 1.0.0 Public'+
-                `\n\n🍁 Check github for bot: `
+                `\n\n🍁 Check github for bot :- https://github.com/KING-BOT-OFFICIAL/KING-BOT`
            , MessageType.text);
             
         }));
@@ -112,7 +112,7 @@ else if (Config.WORKTYPE == 'public') {
         if (Config.ALIVEMSG == 'default') {
         
         
-        var logo = await axios.get (`https://telegra.ph/file/d85f2c2806053601295e9.jpg`, { responseType: 'arraybuffer' })
+        var logo = await axios.get (`https://telegra.ph/file/24b9b8507613125d34bd1.jpg`, { responseType: 'arraybuffer' })
     var PIC = Buffer.from(logo.data)
 
     const media = await message.client.prepareMessage(message.jid, PIC, MessageType.image, { thumbnail: PIC })
@@ -127,14 +127,14 @@ else if (Config.WORKTYPE == 'public') {
 const btn = {
    // imageMessage: 'https://telegra.ph/file/cd35928cef2be17d339c1.jpg',
     contentText: "```🙋Hey There! I'm Online now📶️️```\n\n⚜️ My name : [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️\n\n ⚜️ Developer: White hackers\n\n⚜️ Thank You For Using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]",
-    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
 }
 
             
-            var image = await axios.get ('https://telegra.ph/file/cd6032c65c27e0510ddad.jpg', {responseType: 'arraybuffer'})
+            var image = await axios.get ('https://telegra.ph/file/24b9b8507613125d34bd1.jpg', {responseType: 'arraybuffer'})
        
 
        await message.client.updatePresence(message.jid,Presence.composing)
@@ -162,9 +162,9 @@ const btn = {
   {buttonId: 'MEHN', buttonText: {displayText: '😈 CONTACT OWNER 🤘'+owner}, type: 1},
   ]
 const btn = {
-   // imageMessage: 'https://telegra.ph/file/cd6032c65c27e0510ddad.jpg',
+   // imageMessage: 'https://telegra.ph/file/24b9b8507613125d34bd1.jpg',
     contentText:  Config.ALIVEMSG + "\n\n\nThonk you for using [🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘].️",
-    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ▷',
+    footerText: '</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️ ',
     buttons: buttons,
     headerType: 4,
     imageMessage: media.message.imageMessage
@@ -206,7 +206,7 @@ const btn = {
                 `*[🇱🇰𝙺𝙸𝙽𝙶 𝙱𝙾𝚃🤘]️*\n\n` + 
                 '```Installed version :```\n' +
                 ' V 1.0.0 - Public'+
-                `\n\n🍁 Check github for bot:  `
+                `\n\n🍁 Check github for bot :- https://github.com/KING-BOT-OFFICIAL/KING-BOT  `
            , MessageType.text);
             
         }));
