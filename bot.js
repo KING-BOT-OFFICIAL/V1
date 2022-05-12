@@ -64,7 +64,7 @@ async function Trex () {
     conn.version = [3,2147,14];
     const Session = new StringSession();
     
-    conn.browserDescription = ["ALPHA", "Safari", '5.0.0']
+    conn.browserDescription = ["KING", "Safari", '1.0.0']
 
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
@@ -93,7 +93,7 @@ async function Trex () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️')}${chalk.blue.bold('▷')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('🎭🇱🇰 Connecting to WhatsApp...▶')}`);
+${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
     });
     
 
@@ -119,14 +119,8 @@ ${chalk.blue.italic('🎭🇱🇰 Connecting to WhatsApp...▶')}`);
         });
         
         console.log(
-            chalk.blueBright.italic('🎭🇰 Installing plugins...')
+            chalk.blueBright.italic('🎭 Installing plugins...')
         );
-
-        fs.readdirSync('./plugins').forEach(plugin => {
-            if(path.extname(plugin).toLowerCase() == '.js') {
-                require('./plugins/' + plugin);
-            }
-        });
         
         console.log(
             chalk.green.bold(' Ҝ丨几Ꮆ WHATSAPP BOT WORKING!▷')
@@ -135,15 +129,21 @@ ${chalk.blue.italic('🎭🇱🇰 Connecting to WhatsApp...▶')}`);
         console.log(
             chalk.blueBright.italic('Ҝ丨几Ꮆ WhatsApp User Bot v5.0.0')
         );
+        fs.readdirSync('./plugins').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./plugins/' + plugin);
+            }
+        });
+       
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: `🇱🇰🎭 Hellow !! ${conn.user.name}! \n\n*🎭 Welcome To 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  :│🎭 *\n\n\n Your Bot Working  As ${config.WORKTYPE} 🎭 .\n\n*🎭 │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WORKING Your Account*\n\n*🎭 ▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🎭  .up Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🇱🇰🎭 Hellow !! ${conn.user.name}! \n\n*🎭 Welcome To 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  :│🎭 *\n\n\n Your Bot Working  As ${config.WORKTYPE} 🎭 .\n\n*🎭 │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WORKING Your Account*\n\n*🎭 ▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🎭  .up Command use for new items*\n\n`});
              
          } else if (config.LANG == 'SI') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: `🇱🇰🎭 අයුබොවන් !! ${conn.user.name}! \n\n*🎭  සාදරයෙන් 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  වෙත පිලිගන්නවා :│🎭 *\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🎭 │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 bot සම්පූර්න මෙනුව ලබා ගැනීමට 🎭 .alpha විධානය භාවිතා කරන්න...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට🎭  .up විධානය භාවිතා කරන්න..*\n\n*🎭  මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🇱🇰🎭 අයුබොවන් !! ${conn.user.name}! \n\n*🎭  සාදරයෙන් 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  වෙත පිලිගන්නවා :│🎭 *\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🎭 │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 bot සම්පූර්න මෙනුව ලබා ගැනීමට 🎭 .alpha විධානය භාවිතා කරන්න...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට🎭  .up විධානය භාවිතා කරන්න..*\n\n*🎭  මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: `🇱🇰🎭 Hellow !!  ${conn.user.name}! \\nn*🎭  Welcome To 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  :│🎭 *\n\n\n Your Bot Working  As ${config.WORKTYPE} 🎭 .\n\n*🎭  │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WORKING Your Account*\n\n*🎭 ▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🎭  .up Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🇱🇰🎭 Hellow !!  ${conn.user.name}! \\nn*🎭  Welcome To 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  :│🎭 *\n\n\n Your Bot Working  As ${config.WORKTYPE} 🎭 .\n\n*🎭  │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WORKING Your Account*\n\n*🎭 ▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🎭  .up Command use for new items*\n\n`});
         }
      });
     
@@ -432,13 +432,13 @@ ${chalk.blue.italic('🎭🇱🇰 Connecting to WhatsApp...▶')}`);
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'EN') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
                                 
                             } else if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\nf_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
                                 
                             } else {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
                             }
                         }
                     }
