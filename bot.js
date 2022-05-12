@@ -91,7 +91,7 @@ async function Trex () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('</> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋɪɴɢ ʙᴏᴛ </>️')}${chalk.blue.bold('▷')}
+        console.log(`${chalk.green.bold('</> 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙺𝙸𝙽𝙶 𝙱𝙾𝚃 </>️')}${chalk.blue.bold('▷')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 ${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
     });
@@ -99,7 +99,7 @@ ${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('🎭 Login successful!▶')
+            chalk.green.bold('🎭 Login successful !  ▶')
         );
 
         console.log(
@@ -123,11 +123,11 @@ ${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
         );
         
         console.log(
-            chalk.green.bold(' Ҝ丨几Ꮆ WHATSAPP BOT WORKING!▷')
+            chalk.green.bold(' ⎝🔥𝙺𝙸𝙽𝙶🔥⎠ WHATSAPP BOT WORKING!▷')
        );
         
         console.log(
-            chalk.blueBright.italic('Ҝ丨几Ꮆ WhatsApp User Bot v5.0.0')
+            chalk.blueBright.italic('⎝🔥𝙺𝙸𝙽𝙶🔥⎠ WhatsApp User Bot V1.0.0')
         );
         fs.readdirSync('./plugins').forEach(plugin => {
             if(path.extname(plugin).toLowerCase() == '.js') {
