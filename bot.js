@@ -64,7 +64,7 @@ async function Trex () {
     conn.version = [3,2147,14];
     const Session = new StringSession();
     
-    conn.browserDescription = ["KING", "Safari", '1.0.0']
+    conn.browserDescription = ["ALPHA", "Safari", '5.0.0']
 
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
@@ -79,7 +79,7 @@ async function Trex () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('▷ Login information updated! 🎭')
+            chalk.blueBright.italic('▷ Login information updated! 🇱🇰')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -91,15 +91,15 @@ async function Trex () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('</> 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙺𝙸𝙽𝙶 𝙱𝙾𝚃 </>️')}${chalk.blue.bold('▷')}
+        console.log(`${chalk.green.bold('[🇱🇰𝚱𝚰𝚴Ｇ')}${chalk.blue.bold('𝛃𝚯𝚪🤘]')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
+${chalk.blue.italic('🇱🇰 Connecting to WhatsApp...▶')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('🎭 Login successful !  ▶')
+            chalk.green.bold('🇱🇰  Login successful!▶')
         );
 
         console.log(
@@ -119,22 +119,22 @@ ${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
         });
         
         console.log(
-            chalk.blueBright.italic('🎭 Installing plugins...')
+            chalk.blueBright.italic('🇱🇰 Installing plugins...')
         );
-        
-        console.log(
-            chalk.green.bold(' ⎝🔥𝙺𝙸𝙽𝙶🔥⎠ WHATSAPP BOT WORKING!▷')
-       );
-        
-        console.log(
-            chalk.blueBright.italic('⎝🔥𝙺𝙸𝙽𝙶🔥⎠ WhatsApp User Bot V1.0.0')
-        );
+
         fs.readdirSync('./plugins').forEach(plugin => {
             if(path.extname(plugin).toLowerCase() == '.js') {
                 require('./plugins/' + plugin);
             }
         });
-       
+        
+        console.log(
+            chalk.green.bold(' 𝚱𝚰𝚴Ｇ WHATSAPP BOT WORKING!▷')
+       );
+        
+        console.log(
+            chalk.blueBright.italic('𝚱𝚰𝚴Ｇ WhatsApp User Bot V1.0.0')
+        );
         
          if (config.LANG == 'EN') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: `🇱🇰🎭 Hellow !! ${conn.user.name}! \n\n*🎭 Welcome To 🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  :│🎭 *\n\n\n Your Bot Working  As ${config.WORKTYPE} 🎭 .\n\n*🎭 │🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WORKING Your Account*\n\n*🎭 ▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🎭  🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🎭  .up Command use for new items*\n\n`});
@@ -432,10 +432,10 @@ ${chalk.blue.italic('🎭 Connecting to WhatsApp...▶')}`);
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'EN') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/PicsArt_04-14-03.49.52.png"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
                                 
                             } else if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\nf_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
                                 
                             } else {
                                 await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/logo.jpeg"), MessageType.image, { caption: '🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🎭 Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
